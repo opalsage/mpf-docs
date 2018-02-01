@@ -114,6 +114,11 @@ version is the latest.)
 * Change ``your_machine_folder`` to the name of your specific machine folder.
 * Change ``config`` part to reflect the name of your top-level config file in ``~/your_machine_folder/config/``.
 
+To ensure that your user account has permissions to execute the config file, navigate to ``/home/your_username/your_machine_folder/`` in a terminal window and type:
+
+.. code-block:: console
+
+   sudo chmod +x run.sh 
 
 6. Setup your Machine Config to Auto-execute
 --------------------------------------------
@@ -136,6 +141,12 @@ We'll create one of our own to run the script we just added to our machine confi
 
 * Change ``your_username`` to the username you created during installation.
 * Change ``your_machine_folder`` to the name of your specific machine folder.
+
+To ensure that your user account has permissions to execute the startup file, navigate to ``~/.config/autostart/`` in a terminal window and type:
+
+.. code-block:: console
+
+   sudo chmod +x desktop.mpf 
 
 That's it. At this point, you should be able to reboot and watch the system auto-login to XFCE and then launch MPF
 using the script we added to your machine config.
